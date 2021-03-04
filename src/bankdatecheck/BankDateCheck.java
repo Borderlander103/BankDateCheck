@@ -1,7 +1,5 @@
 package bankdatecheck;
 
-import java.sql.Date;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
@@ -15,7 +13,6 @@ public class BankDateCheck {
       "2021-04-02", "2021-04-19", "2021-05-31", "2021-07-05", "2021-09-06", "2021-10-11",
       "2021-11-11", "2021-11-25", "2021-11-26", "2021-12-24");
   static LocalDate date;
-//  static String day;
   static LocalTime time;
   static LocalTime openingTime = LocalTime.parse("09:00:00");
   static LocalTime closingTime = LocalTime.parse("16:00:00");
@@ -38,18 +35,7 @@ public class BankDateCheck {
   public static void getTime() {
     date = LocalDate.now();
     time = LocalTime.now().truncatedTo(ChronoUnit.SECONDS);
-//    day = (new SimpleDateFormat("EEEE")).format(new Date(System.currentTimeMillis()));
   }
-
-//  public static void checkWeekend() {
-//    if(day.equals("Saturday")) {
-//      date = date.plusDays(2L);
-//      updateTime();
-//    } else if(day.equals("Sunday")) {
-//      date = date.plusDays(1L);
-//      updateTime();
-//    }
-//  }
 
   public static void checkTime() {
     if(time.isAfter(closingTime)){
