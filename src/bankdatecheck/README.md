@@ -1,4 +1,6 @@
 To run compiled program, open bash command line in folder containing "bankdatecheck".
+(Note: you will probably need to create a folder "bankdatacheck" and place the .class file
+in it.)
 Run this command: <java bankdatecheck.BankDateCheck>.
 
 That runs solely based of the current date/time.
