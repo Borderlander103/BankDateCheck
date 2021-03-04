@@ -15,46 +15,41 @@ public class BankDateCheck {
       "2021-04-02", "2021-04-19", "2021-05-31", "2021-07-05", "2021-09-06", "2021-10-11",
       "2021-11-11", "2021-11-25", "2021-11-26", "2021-12-24");
   static LocalDate date;
-  static String day;
+//  static String day;
   static LocalTime time;
   static LocalTime openingTime = LocalTime.parse("09:00:00");
   static LocalTime closingTime = LocalTime.parse("16:00:00");
 
   public static void main(String[] args) {
-    System.out.println("hello world");
     getTime();
     System.out.println(date);
     System.out.println(time);
-    System.out.println(day);
-    String blah = date.getDayOfWeek().toString().toLowerCase();
-    System.out.println(date.getDayOfWeek());
-    day = "Sunday";
-    time = LocalTime.parse("10:00:00");
+    System.out.println(date.getDayOfWeek().toString().toLowerCase());
+    time = LocalTime.parse("17:00:00");
     date = LocalDate.of(2021, 12, 23);
-    checkWeekend();
     checkTime();
-    checkHolidays();
+    checkDate();
     System.out.println(date);
     System.out.println(time);
-    System.out.println(day);
+    System.out.println(date.getDayOfWeek().toString().toLowerCase());
     System.out.println(nextOpenDateTime());
   }
 
   public static void getTime() {
     date = LocalDate.now();
     time = LocalTime.now().truncatedTo(ChronoUnit.SECONDS);
-    day = (new SimpleDateFormat("EEEE")).format(new Date(System.currentTimeMillis()));
+//    day = (new SimpleDateFormat("EEEE")).format(new Date(System.currentTimeMillis()));
   }
 
-  public static void checkWeekend() {
-    if(day.equals("Saturday")) {
-      date = date.plusDays(2L);
-      updateTime();
-    } else if(day.equals("Sunday")) {
-      date = date.plusDays(1L);
-      updateTime();
-    }
-  }
+//  public static void checkWeekend() {
+//    if(day.equals("Saturday")) {
+//      date = date.plusDays(2L);
+//      updateTime();
+//    } else if(day.equals("Sunday")) {
+//      date = date.plusDays(1L);
+//      updateTime();
+//    }
+//  }
 
   public static void checkTime() {
     if(time.isAfter(closingTime)){
@@ -65,8 +60,8 @@ public class BankDateCheck {
     }
   }
 
-  public static void checkHolidays() {
-    while(holidays_2021.contains(date.toString())){
+  public static void checkDate() {
+    while(holidays_2021.contains(date.toString()) || weekends.contains(date.getDayOfWeek().toString().toLowerCase())){
       date = date.plusDays(1L);
       updateTime();
     }
