@@ -60,7 +60,8 @@ public class BankDateCheck {
   public static String nextOpenDateTime() {
     String nextDate = date.toString();
     String nextTime = time.toString();
-    return String.format("{banking_date: %s %s}", nextDate, nextTime);
+    String nextDay = date.getDayOfWeek().toString().toLowerCase();
+    return String.format("{banking_date: %s %s %s}", nextDate, nextTime, nextDay);
   }
 
 }
