@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14f6f4ba-0d93-400b-a7f9-4f42f8b1d1e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bankdatecheck/BankDateCheckTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bankdatecheck/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BankDateCheck.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BankDateCheck.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BankDateCheck/bankdatecheck/BankDateCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankDateCheck/bankdatecheck/BankDateCheck.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bankdatecheck/BankDateCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bankdatecheck/BankDateCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bankdatecheck/BankDateCheckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bankdatecheck/BankDateCheckTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,26 +85,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1718" height="249" key="GridCell.Tab.0.bottom" timestamp="1614879769911">
+    <state width="1718" height="249" key="GridCell.Tab.0.bottom" timestamp="1614881817462">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1718" height="249" key="GridCell.Tab.0.bottom/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1614879769911" />
-    <state width="1718" height="249" key="GridCell.Tab.0.center" timestamp="1614879769911">
+    <state width="1718" height="249" key="GridCell.Tab.0.bottom/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1614881817462" />
+    <state width="1718" height="249" key="GridCell.Tab.0.center" timestamp="1614881817462">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1718" height="249" key="GridCell.Tab.0.center/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1614879769911" />
-    <state width="1718" height="249" key="GridCell.Tab.0.left" timestamp="1614879769911">
+    <state width="1718" height="249" key="GridCell.Tab.0.center/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1614881817462" />
+    <state width="1718" height="249" key="GridCell.Tab.0.left" timestamp="1614881817462">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1718" height="249" key="GridCell.Tab.0.left/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1614879769911" />
-    <state width="1718" height="249" key="GridCell.Tab.0.right" timestamp="1614879769911">
+    <state width="1718" height="249" key="GridCell.Tab.0.left/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1614881817462" />
+    <state width="1718" height="249" key="GridCell.Tab.0.right" timestamp="1614881817462">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1718" height="249" key="GridCell.Tab.0.right/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1614879769911" />
-    <state x="595" y="364" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1614880001566">
+    <state width="1718" height="249" key="GridCell.Tab.0.right/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1614881817462" />
+    <state x="595" y="364" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1614881706402">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state x="595" y="364" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1614880001566" />
+    <state x="595" y="364" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1614881706402" />
     <state x="641" y="174" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1614880077858">
       <screen x="0" y="0" width="1739" height="939" />
     </state>

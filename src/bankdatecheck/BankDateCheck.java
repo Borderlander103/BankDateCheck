@@ -19,16 +19,10 @@ public class BankDateCheck {
 
   public static void main(String[] args) {
     getTime();
-    System.out.println(date);
-    System.out.println(time);
-    System.out.println(date.getDayOfWeek().toString().toLowerCase());
 //    time = LocalTime.parse("17:00:00");
 //    date = LocalDate.of(2021, 12, 23);
     checkTime();
     checkDate();
-    System.out.println(date);
-    System.out.println(time);
-    System.out.println(date.getDayOfWeek().toString().toLowerCase());
     System.out.println(nextOpenDateTime());
   }
 
