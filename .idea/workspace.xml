@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="14f6f4ba-0d93-400b-a7f9-4f42f8b1d1e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bankdatecheck/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/bankdatecheck/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bankdatecheck/BankDateCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bankdatecheck/BankDateCheck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +97,10 @@
       <screen x="0" y="0" width="1739" height="939" />
     </state>
     <state width="1718" height="249" key="GridCell.Tab.0.right/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1614881817462" />
+    <state x="566" y="-785" key="com.intellij.ide.util.TipDialog" timestamp="1615854612722">
+      <screen x="0" y="-1080" width="1739" height="939" />
+    </state>
+    <state x="566" y="-785" key="com.intellij.ide.util.TipDialog/0.0.1739.939/0.-1080.1739.939@0.-1080.1739.939" timestamp="1615854612722" />
     <state x="595" y="364" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1614881706402">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
