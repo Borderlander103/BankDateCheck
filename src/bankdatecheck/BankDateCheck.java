@@ -31,6 +31,7 @@ public class BankDateCheck {
   public static void main(String[] args) {
     getTime();
 //    time = LocalTime.parse("17:00:00");
+//    time = LocalTime.parse("12:30:00");
 //    date = LocalDate.of(2021, 12, 23);
 //    timezone = "Europe/London";
     checkBusinessHours();
@@ -43,18 +44,20 @@ public class BankDateCheck {
     date = LocalDate.now();
     time = LocalTime.now().truncatedTo(ChronoUnit.SECONDS);
     timezone = Clock.systemDefaultZone().getZone().toString();
+  }
+
+  public static void checkBusinessHours() {
+    // combine USA timezone IDs into one for switch statement
     String tzcheck = timezone.split("/", 2)[0];
     if (tzcheck.equals("America") || tzcheck.equals("US")) {
       timezone = "America";
     }
-  }
-
-  public static void checkBusinessHours() {
     switch (timezone) {
       case "America":
         openingTime = LocalTime.parse("09:00:00");
         closingTime = LocalTime.parse("16:00:00");
         holidays_2021 = us_holidays_2021;
+        timezone = Clock.systemDefaultZone().getZone().toString(); // resets to full timezone id
         break;
       case "Europe/London":
         openingTime = LocalTime.parse("09:00:00");
