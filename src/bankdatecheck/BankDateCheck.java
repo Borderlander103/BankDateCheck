@@ -66,11 +66,14 @@ public class BankDateCheck {
         break;
       default:
         System.out.println("Error: your timezone is invalid.");
-//        System.exit(0);
+        System.exit(0);
     }
   }
 
   public static void checkTime() {
+    if (lunchStart != null && time.isAfter(lunchStart) && time.isBefore(lunchStop)) {
+      time = lunchStop;
+    }
     if(time.isAfter(closingTime)){
       date = date.plusDays(1L);
       updateTime();

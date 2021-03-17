@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14f6f4ba-0d93-400b-a7f9-4f42f8b1d1e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/brichardson.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bankdatecheck/BankDateCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bankdatecheck/BankDateCheck.java" afterDir="false" />
     </list>
@@ -93,19 +92,27 @@
       <option name="project" value="LOCAL" />
       <updated>1615947870519</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add timezone check and most of switch statement">
+      <created>1615950635321</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615950635321</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add UK and HK holidays" />
     <MESSAGE value="Add timezone variables, get timezone, check timezone placeholder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add timezone variables, get timezone, check timezone placeholder" />
+    <MESSAGE value="Add timezone check and most of switch statement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add timezone check and most of switch statement" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="387" y="65" key="CommitChangelistDialog2" timestamp="1615947869839">
+    <state x="387" y="65" key="CommitChangelistDialog2" timestamp="1615950634761">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state x="387" y="65" key="CommitChangelistDialog2/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1615947869839" />
+    <state x="387" y="65" key="CommitChangelistDialog2/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1615950634761" />
     <state width="1718" height="249" key="GridCell.Tab.0.bottom" timestamp="1614881817462">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
