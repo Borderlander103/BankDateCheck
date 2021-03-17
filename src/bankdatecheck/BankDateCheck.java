@@ -9,6 +9,15 @@ import java.util.List;
 
 public class BankDateCheck {
 
+  static LocalDate date;
+  static LocalTime time;
+  static String timezone;
+  static LocalTime openingTime;
+  static LocalTime closingTime;
+  static LocalTime lunchStart;
+  static LocalTime lunchStop;
+  static List<String> holidays_2021;
+
   static List<String> weekends = Arrays.asList("saturday", "sunday");
   static List<String> us_holidays_2021 = Arrays.asList("2021-01-01", "2021-01-18", "2021-02-15",
       "2021-04-02", "2021-04-19", "2021-05-31", "2021-07-05", "2021-09-06", "2021-10-11",
@@ -18,14 +27,6 @@ public class BankDateCheck {
   static List<String> hk_holidays_2021 = Arrays.asList("2021-01-01", "2021-02-12", "2021-02-15",
       "2021-04-02", "2021-04-05", "2021-04-06", "2021-05-19", "2021-06-14", "2021-07-01",
       "2021-09-22", "2021-10-01", "2021-10-14", "2021-12-27");
-
-  static LocalDate date;
-  static LocalTime time;
-  static String timezone;
-  static LocalTime openingTime;
-  static LocalTime closingTime;
-  static LocalTime lunchStart;
-  static LocalTime lunchStop;
 
   public static void main(String[] args) {
     getTime();
@@ -53,16 +54,19 @@ public class BankDateCheck {
       case "America":
         openingTime = LocalTime.parse("09:00:00");
         closingTime = LocalTime.parse("16:00:00");
+        holidays_2021 = us_holidays_2021;
         break;
       case "Europe/London":
         openingTime = LocalTime.parse("09:00:00");
         closingTime = LocalTime.parse("16:00:00");
         lunchStart = LocalTime.parse("12:00:00");
         lunchStop = LocalTime.parse("13:00:00");
+        holidays_2021 = uk_holidays_2021;
         break;
       case "Asia/Hong_Kong":
         openingTime = LocalTime.parse("07:00:00");
         closingTime = LocalTime.parse("16:30:00");
+        holidays_2021 = hk_holidays_2021;
         break;
       default:
         System.out.println("Error: your timezone is invalid.");
@@ -83,7 +87,7 @@ public class BankDateCheck {
   }
 
   public static void checkDate() {
-    while(us_holidays_2021.contains(date.toString()) || weekends.contains(date.getDayOfWeek().toString().toLowerCase())){
+    while(holidays_2021.contains(date.toString()) || weekends.contains(date.getDayOfWeek().toString().toLowerCase())){
       date = date.plusDays(1L);
       updateTime();
     }
@@ -97,7 +101,7 @@ public class BankDateCheck {
     String nextDate = date.toString();
     String nextTime = time.toString();
     String nextDay = date.getDayOfWeek().toString().toLowerCase();
-    return String.format("{banking_date: %s %s %s}", nextDate, nextTime, nextDay);
+    return String.format("{banking_date: %s %s %s %s}", nextDate, nextTime, nextDay, timezone);
   }
 
 }

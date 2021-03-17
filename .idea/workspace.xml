@@ -99,20 +99,28 @@
       <option name="project" value="LOCAL" />
       <updated>1615950635321</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add lunchstart lunchstop logic">
+      <created>1615985257502</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615985257502</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add UK and HK holidays" />
     <MESSAGE value="Add timezone variables, get timezone, check timezone placeholder" />
     <MESSAGE value="Add timezone check and most of switch statement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add timezone check and most of switch statement" />
+    <MESSAGE value="Add lunchstart lunchstop logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add lunchstart lunchstop logic" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="387" y="65" key="CommitChangelistDialog2" timestamp="1615950634761">
+    <state x="387" y="65" key="CommitChangelistDialog2" timestamp="1615985256993">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state x="387" y="65" key="CommitChangelistDialog2/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1615950634761" />
+    <state x="387" y="65" key="CommitChangelistDialog2/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1615985256993" />
     <state width="1718" height="249" key="GridCell.Tab.0.bottom" timestamp="1614881817462">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
@@ -133,10 +141,10 @@
       <screen x="0" y="0" width="1739" height="939" />
     </state>
     <state x="379" y="114" key="SettingsEditor/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1615936107208" />
-    <state x="461" y="203" key="Vcs.Push.Dialog.v2" timestamp="1615947873478">
+    <state x="461" y="203" key="Vcs.Push.Dialog.v2" timestamp="1615985261234">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state x="461" y="203" key="Vcs.Push.Dialog.v2/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1615947873478" />
+    <state x="461" y="203" key="Vcs.Push.Dialog.v2/0.0.1739.939/0.-1080.1739.939@0.0.1739.939" timestamp="1615985261234" />
     <state x="566" y="295" key="com.intellij.ide.util.TipDialog" timestamp="1615935879446">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
