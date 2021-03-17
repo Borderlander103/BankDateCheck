@@ -22,14 +22,17 @@ public class BankDateCheck {
   static LocalDate date;
   static LocalTime time;
   static String timezone;
-  static LocalTime openingTime = LocalTime.parse("09:00:00");
-  static LocalTime closingTime = LocalTime.parse("16:00:00");
+  static LocalTime openingTime;
+  static LocalTime closingTime;
+  static LocalTime lunchStart;
+  static LocalTime lunchStop;
 
   public static void main(String[] args) {
     getTime();
 //    time = LocalTime.parse("17:00:00");
 //    date = LocalDate.of(2021, 12, 23);
 //    timezone = "Europe/London";
+    checkBusinessHours();
     checkTime();
     checkDate();
     System.out.println(nextOpenDateTime());
@@ -39,10 +42,32 @@ public class BankDateCheck {
     date = LocalDate.now();
     time = LocalTime.now().truncatedTo(ChronoUnit.SECONDS);
     timezone = Clock.systemDefaultZone().getZone().toString();
+    String tzcheck = timezone.split("/", 2)[0];
+    if (tzcheck.equals("America") || tzcheck.equals("US")) {
+      timezone = "America";
+    }
   }
 
-  public static void checkTimeZone() {
-
+  public static void checkBusinessHours() {
+    switch (timezone) {
+      case "America":
+        openingTime = LocalTime.parse("09:00:00");
+        closingTime = LocalTime.parse("16:00:00");
+        break;
+      case "Europe/London":
+        openingTime = LocalTime.parse("09:00:00");
+        closingTime = LocalTime.parse("16:00:00");
+        lunchStart = LocalTime.parse("12:00:00");
+        lunchStop = LocalTime.parse("13:00:00");
+        break;
+      case "Asia/Hong_Kong":
+        openingTime = LocalTime.parse("07:00:00");
+        closingTime = LocalTime.parse("16:30:00");
+        break;
+      default:
+        System.out.println("Error: your timezone is invalid.");
+//        System.exit(0);
+    }
   }
 
   public static void checkTime() {
